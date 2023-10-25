@@ -1,6 +1,7 @@
 
 class CalledUtil {
-    //trick kotlin compiler into creating additional .class files
+    //tricks kotlin compiler into creating additional .class files, if it's in the main module
+    //doesn't seem to matter in the `core`
 }
 
 

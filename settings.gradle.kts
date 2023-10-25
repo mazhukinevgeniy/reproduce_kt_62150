@@ -10,3 +10,4 @@ plugins {
 }
 
 rootProject.name = "reproduce_kt_62150"
+include(":core")

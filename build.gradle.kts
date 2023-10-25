@@ -8,6 +8,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation(project(":core", configuration = "default"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
