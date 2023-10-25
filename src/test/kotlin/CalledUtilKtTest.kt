@@ -7,9 +7,8 @@ class CalledUtilKtTest {
     private fun moduleLocalWork() = "kt-62150"
 
     @Test
-    fun runReadAction() {
-       //// val result = moduleLocalWork()
-        val result = runReadAction { moduleLocalWork() }
+    fun `should discover local paths given a server path`() {
+        val result = moduleLocalWork()
         assertEquals(result.toString(), "kt-62150")
     }
 }

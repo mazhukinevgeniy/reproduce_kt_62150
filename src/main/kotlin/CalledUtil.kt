@@ -1,7 +1,15 @@
 
+class CalledUtil {
+    //trick kotlin compiler into creating additional .class files
+}
+
 
 inline fun <T> runReadAction(crossinline runnable: () -> T): T {
     return Singleton.getService().runReadAction(SAM { runnable() })
+}
+
+inline fun <T> runJavaReadAction(crossinline runnable: () -> T): T {
+    return JSingleton.getService().runReadAction(JSAM { runnable() })
 }
 
 /**
